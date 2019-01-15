@@ -7,8 +7,8 @@ class Branding extends Component {
     render() {
         return (
             <div id="branding-container">
-                <img id="logo-bluefire" src={logo_bluefire} />
-                <img id="logo-ecudevs" src={logo_ecudevs} />
+                <img alt="bluefire" id="logo-bluefire" src={logo_bluefire} />
+                <img alt="ecudevs" id="logo-ecudevs" src={logo_ecudevs} />
             </div>
         );
     }
