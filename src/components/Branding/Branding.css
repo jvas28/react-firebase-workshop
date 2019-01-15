@@ -1,0 +1,17 @@
+
+#branding-container{
+    width: 210px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2rem
+}
+#logo-bluefire{
+    width: 100px;
+}
+#logo-ecudevs{
+    width: 70px;
+}
