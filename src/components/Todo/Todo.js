@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Todo.css';
 const colors = {    
     TODO: 'primary',
     DOING: 'warning',
@@ -17,17 +18,17 @@ class Todo extends Component {
         const { code, description, removeTask, status } = this.props;
         const bg_color = colors[status] || 'info';
         return (
-            <div className={`card my-1 bg-${bg_color} text-white`}>
+            <div className={`todo-item card my-1 bg-${bg_color} text-white`}>
                           <div className="card-body">
                               <p className="card-text">
                                   {description} 
                               </p>
-                              <select onChange={this.onStatusChange} defaultValue={status} className="custom-select">
+                              <select onChange={this.onStatusChange} defaultValue={status} className="option custom-select">
                                   <option value="TODO">To do</option>
                                   <option value="DOING">Doing</option>
                                   <option value="DONE">Done</option>
                               </select>
-                              <button href="#" style={{float:"right"}}  className="btn btn-danger" onClick={()=>{removeTask(code)}}>x</button>
+                              <button href="#" style={{float:"right"}}  className="delete-button btn btn-danger" onClick={()=>{removeTask(code)}}>x</button>
                           </div>
             </div>
         );
