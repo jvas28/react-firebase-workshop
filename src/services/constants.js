@@ -1,5 +1,5 @@
 import uuid from 'uuid';
-export const  todos = [
+export const  tasklist = [
     {
         code: uuid(),
         description: "Transformar el tablero en aplicación",
